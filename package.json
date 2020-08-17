@@ -5,7 +5,9 @@
   "main": "index.js",
   "scripts": {
     "iniciar": "npx ts-node-dev src/server.ts",
-    "knex:migrate": "npx knex migrate:latest --knexfile knexfile.ts migrate:latest"
+    "knex:migrate": "npx knex migrate:latest --knexfile knexfile.ts migrate:latest",
+    "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
+    "db:migrate": "knex --knexfile knexfile.ts migrate:latest"
   },
   "author": "",
   "license": "ISC",
