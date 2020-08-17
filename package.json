@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "iniciar": "npx ts-node-dev src/server.ts",
+    "start": "npx ts-node-dev src/server.ts",
     "knex:migrate": "npx knex migrate:latest --knexfile knexfile.ts migrate:latest"
   },
   "author": "",
