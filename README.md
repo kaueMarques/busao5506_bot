@@ -9,3 +9,5 @@ Exemplo
 NÃO ESQUEÇA DE BAIXAR AS DEPENDENCIAS COM `npm install `
 
 O `.env` está no grupo do Telegram 
+
+Coloque seus commits na brench "dev", dps avise aos outros para só assim enviar para o Master
