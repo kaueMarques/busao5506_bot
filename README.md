@@ -7,3 +7,5 @@ Exemplo
  ` criado o database sqlite - v0.2 `
 
 NÃO ESQUEÇA DE BAIXAR AS DEPENDENCIAS COM `npm install `
+
+O `.env` está no grupo do Telegram 
