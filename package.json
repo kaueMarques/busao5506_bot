@@ -7,7 +7,8 @@
     "iniciar": "npx ts-node-dev src/server.ts",
     "knex:migrate": "npx knex migrate:latest --knexfile knexfile.ts migrate:latest",
     "start": "tsnd --transpile-only --ignore-watch node_modules --respawn src/server.ts",
-    "db:migrate": "knex --knexfile knexfile.ts migrate:latest"
+    "db:migrate": "knex --knexfile knexfile.ts migrate:latest",
+    "bot": "tsnd --transpile-only --ignore-watch node_modules --respawn src/bot.ts"
   },
   "author": "",
   "license": "ISC",
@@ -15,10 +16,12 @@
     "dotenv": "^8.2.0",
     "express": "^4.17.1",
     "knex": "^0.21.4",
+    "node-telegram-bot-api": "^0.50.0",
     "sqlite3": "^5.0.0"
   },
   "devDependencies": {
     "@types/express": "^4.17.7",
+    "@types/node-telegram-bot-api": "^0.50.2",
     "ts-node": "^8.10.2",
     "ts-node-dev": "^1.0.0-pre.57",
     "typescript": "^3.9.7"

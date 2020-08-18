@@ -1,12 +1,12 @@
 import knex from 'knex'
 
 export async function up(knex:knex) {
-    return knex.schema.createTable('horarios', table => {
+    return knex.schema.createTable('universal', table => {
         table.increments('id').primary()
-        table.string('horario').notNullable()
+        table.string('preco').notNullable()
     })
 } 
 
 export async function down(knex:knex) {
-    return knex.schema.dropTableIfExists('horarios')
+    return knex.schema.dropTableIfExists('universal')
 } 
